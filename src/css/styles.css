@@ -1,0 +1,45 @@
+
+
+@keyframes CardBorderAnim{
+  0%{
+    border: 2px solid rgb(155, 155, 155);
+  }
+  25%{
+    border: 2px solid black;
+  }
+  50%{
+    border: 2px solid rgb(155, 155, 155);
+  }
+  75%{
+    border: 2px solid white;
+  }
+  100%{
+    border: 2px solid rgb(155, 155, 155);
+  }
+}
+
+body{
+  background: url(../../images/Just_Stars.webp);
+  text-align: center;
+}
+
+.CardDiv{
+  display: inline-block;
+  height: 400px;
+  width: 300px;
+  animation-name: CardBorderAnim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+#FRCard{
+  background: linear-gradient(rgba(0%, 0%, 0%, 0%), rgba(33%, 33%, 33%, 33%));
+}
+
+#SRCard{
+  background: linear-gradient(rgba(33%, 33%, 33%, 33%), rgba(66%, 66%, 66%, 66%));
+}
+
+#TRCard{
+  background: linear-gradient(rgba(66%, 66%, 66%, 66%), white);
+}
